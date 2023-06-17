@@ -7,7 +7,7 @@ export default function App() {
     <View style={styles.container}>
       <Image style={styles.logo} source={require('../assets/florRosa.png')} />
       <Text style={styles.text}>Doce Fragrância</Text>
-      <Text style={styles.text2}>Seja bem vindo á Doce Fragrância! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non velit vitae orci euismod dictum. Sed magna odio, sollicitudin consectetur sagittis vitae, pulvinar a magna. Donec sed justo tortor.</Text>
+      <Text style={styles.text2}>Seja bem-vindo á Doce Fragrância! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non velit vitae orci euismod dictum. Sed magna odio, sollicitudin consectetur sagittis vitae, pulvinar a magna. Donec sed justo tortor.</Text>
       
       <Link href="/telaA" style={styles.button}>Próximo</Link>
       <StatusBar style="auto" />
@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 32,
     fontWeight: 'bold',
+    fontFamily: 'Times New Roman',
   },
 
   text2: {
@@ -41,15 +42,22 @@ const styles = StyleSheet.create({
 
   button: {
     backgroundColor: '#7E1717',
-    color: '#020202',
+    color: '#FFE5CA',
     padding: 8,
     borderRadius: 5,
     width: '30%',
     alignItems: 'center',
-    borderWidth: 2,
-    borderColor: '#ebd8be',
     marginTop: 15,
     textAlign: 'center',
     fontSize: 15,
+    fontFamily: 'Times New Roman',
+    shadowOffset: {
+      width: 2,
+      height: 4,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+  
+    elevation: 5,
   },
 });
