@@ -32,7 +32,7 @@ export default function App() {
       <Link href="/telaC" style={styles.button}>Salvar</Link>
       <StatusBar style="auto" />
 
-      <Link href="/telaA" style={styles.button}>Voltar</Link>
+      <Link href="/telaA" style={styles.button2}>Voltar</Link>
       <StatusBar style="auto" />
     </View>
   );
@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 32,
     fontWeight: 'bold',
+    fontFamily: 'Times New Roman',
   },
 
   logo: {
@@ -64,22 +65,43 @@ const styles = StyleSheet.create({
     width: '80%',
     backgroundColor: '#ebd8be',
     color: '#7A7A7A',
-    borderWidth: 2,
-    borderColor: '#7E1717',
+
     fontSize: 15,
   },
 
   button: {
     backgroundColor: '#7E1717',
+    color: '#FFE5CA',
+    padding: 8,
+    borderRadius: 5,
+    width: '30%',
+    alignItems: 'center',
+    marginTop: 15,
+    textAlign: 'center',
+    fontSize: 15,
+    fontFamily: 'Times New Roman',
+    shadowOffset: {
+      width: 2,
+      height: 4,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+  
+    elevation: 5,
+  },
+
+  button2: {
+    backgroundColor: '#FFF3E2',
     color: '#020202',
     padding: 8,
     borderRadius: 5,
     width: '30%',
     alignItems: 'center',
     borderWidth: 2,
-    borderColor: '#ebd8be',
+    borderColor: '#7E1717',
     marginTop: 15,
     textAlign: 'center',
     fontSize: 15,
+    fontFamily: 'Times New Roman',
   },
 });
