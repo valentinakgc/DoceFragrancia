@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 32,
     fontWeight: 'bold',
+    fontFamily: 'Times New Roman',
   },
 
   text2: {
@@ -40,15 +41,22 @@ const styles = StyleSheet.create({
 
   button: {
     backgroundColor: '#7E1717',
-    color: '#020202',
+    color: '#FFE5CA',
     padding: 8,
     borderRadius: 5,
     width: '30%',
     alignItems: 'center',
-    borderWidth: 2,
-    borderColor: '#ebd8be',
     marginTop: 15,
     textAlign: 'center',
     fontSize: 15,
+    fontFamily: 'Times New Roman',
+    shadowOffset: {
+      width: 2,
+      height: 4,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+  
+    elevation: 5,
   },
 });
