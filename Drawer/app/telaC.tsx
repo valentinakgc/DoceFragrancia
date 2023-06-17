@@ -18,7 +18,7 @@ export default function App() {
 
 
 
-      <Link href="/">Voltar para Tela Principal</Link>
+      <Link href="/" style={styles.button}>Home</Link>
       <StatusBar style="auto" />
     </View>
   );
@@ -32,54 +32,76 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   text: {
-    fontSize: 32,
+    fontSize: 28,
     fontWeight: 'bold',
+    fontFamily: 'Times New Roman',
   },
 
   logo: {
-    height: 70,
-    width: 70,
+    height: 60,
+    width: 60,
+  },
+
+  button: {
+    backgroundColor: '#7E1717',
+    color: '#FFE5CA',
+    padding: 8,
+    borderRadius: 5,
+    width: '30%',
+    alignItems: 'center',
+    marginTop: 15,
+    textAlign: 'center',
+    fontSize: 15,
+    fontFamily: 'Times New Roman',
+    shadowOffset: {
+      width: 2,
+      height: 4,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+  
+    elevation: 5,
   },
 
   imagem1: {
-    height: 150,
-    width: 150,
+    height: 145,
+    width: 145,
     marginTop: 20,
     marginRight: 160,
   },
 
   imagem2: {
-    height: 150,
-    width: 150,
-    marginTop: -150,
+    height: 145,
+    width: 145,
+    marginTop: -145,
     marginLeft: 160,
   },
 
   imagem3: {
-    height: 150,
-    width: 150,
+    height: 145,
+    width: 145,
     marginTop: 15,
     marginRight: 160,
   },
 
   imagem4: {
-    height: 150,
-    width: 150,
-    marginTop: -150,
+    height: 145,
+    width: 145,
+    marginTop: -145,
     marginLeft: 160,
   },
 
   imagem5: {
-    height: 150,
-    width: 150,
+    height: 145,
+    width: 145,
     marginTop: 15,
     marginRight: 160,
   },
 
   imagem6: {
-    height: 150,
-    width: 150,
-    marginTop: -150,
+    height: 145,
+    width: 145,
+    marginTop: -145,
     marginLeft: 160,
   },
 
